@@ -1,0 +1,25 @@
+How to Install MySql in windows 10
+
+1. First install python in system using following link
+	https://www.python.org/downloads/
+
+2. Now check for pip installed or not by command in terminal
+ " pip -V "(gives output version of installed pip)
+   If not use command " python get-pip.py " (In terminal)
+
+3. Now you have to install Mysql connector for python using
+  following comand " pip install mysql-connector-python "
+
+4. Install MySql using link " https://dev.mysql.com/downloads/installer "
+   and complete the installation as said.
+   Dont forget the password which was set while installation.
+
+5. Open Mysql command line client and enter the password to start,
+
+   1) show databases; -->  to enlist all databases
+   2) create database DATABASE_NAME;  --> to create database
+   3) use DATABASE_NAME  --> to start work on respective database
+
+
+
+   
