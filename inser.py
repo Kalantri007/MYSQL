@@ -7,19 +7,42 @@ class DB:
                                             user="root",
                                             password="password",
                                             database="car")
-        mycursor = self.mydb.cursor()
+        c = self.mydb.cursor()
 
-    def insert(self,SR,model,stock,launch_date,car_description):
+    def insert(self,SR,model,stock,launch_date,car_description)
         que = "INSERT INTO car_details VALUES ({},'{}',{},'{}','{}')".format(SR,model,stock,launch_date,car_description)
         print(que)
-        cur = self.mydb.cursor()
-        cur.execute(que)
+        c = self.mydb.cursor()
+        c.execute(que)
         self.mydb.commit()
         print("done!!!")
 
+    def print_data(self):
+        que = "SELECT * FROM car_details"
+        c = self.mydb.cursor()
+        c.execute(que)
+
+        for row in c:
+            print(row)
+
+    def del_data(self, id):
+        que = "DELETE FROM car_details WHERE SR= {}".format(id)
+        print(que)
+        c = self.mydb.cursor()
+        c.execute(que)
+        self.mydb.commit()
+        print("DATA DELETED")
+
+
+
+
 obj = DB()
-obj.insert(1,'city', 10, '2021-05-01', 'nice cat')
-obj.insert(2,'amaze', 15, '2021-05-02','good cat')
+obj.print_data()
+obj.del_data()
+obj.print_data()
+
+# obj.insert(1,'city', 10, '2021-05-01', 'nice cat')
+# obj.insert(2,'amaze', 15, '2021-05-02','good cat')
 
 # sql = "insert into feature value(%s,%s,%s)"
 # val = [
