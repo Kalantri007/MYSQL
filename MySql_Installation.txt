@@ -18,7 +18,8 @@ How to Install MySql in windows 10
 
    1) show databases; -->  to enlist all databases
    2) create database DATABASE_NAME;  --> to create database
-   3) use DATABASE_NAME  --> to start work on respective database
+   3) use DATABASE_NAME  --> to start work on respective database.
+
 
 
 
