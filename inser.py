@@ -57,11 +57,10 @@ class DB:
 
 obj = DB()
 
-# obj.insert_FT('city','compact car','1200000')
-# obj.insert_FT('amaze','sports car','1500000')
-# obj.insert_CD(1,'city', 10, '2021-05-01', 'nice cat')
-# obj.insert_CD(2,'amaze', 15, '2021-05-02','good cat')
-
+obj.insert_FT('city','compact car','1200000')
+obj.insert_FT('amaze','sports car','1500000')
+obj.insert_CD(1,'city', 10, '2021-05-01', 'nice cat')
+obj.insert_CD(2,'amaze', 15, '2021-05-02','good cat')
 # obj.print_CD()
 # obj.print_FT()
 # obj.del_FT('city')
@@ -71,9 +70,6 @@ obj = DB()
 # obj.del_CD(1)
 # obj.del_CD(2)
 # obj.print_CD()
-
-
-
 
 # sql = "insert into feature value(%s,%s,%s)"
 # val = [
